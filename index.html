@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday! Teacher</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0e4d7;
+            color: #3b3a30;
+            padding-top: 50px;
+        }
+
+        .message {
+            font-size: 30px;
+            font-weight: bold;
+            color: #ff6347;
+        }
+
+        .birthday-cake {
+            font-size: 80px;
+            margin: 20px;
+        }
+
+        .button {
+            padding: 10px 20px;
+            background-color: #ff6347;
+            color: white;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #ff4500;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="birthday-cake">🎂</div>
+    <div class="message" id="birthdayMessage">Happy Birthday!</div>
+
+    <button class="button" onclick="changeMessage()">Make a Wish</button>
+
+    <script>
+        function changeMessage() {
+            document.getElementById('birthdayMessage').textContent = "Wishing you a day filled with love, joy, and celebration! 🎉";
+        }
+    </script>
+
+</body>
+</html>
